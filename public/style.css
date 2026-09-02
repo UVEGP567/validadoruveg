@@ -30,8 +30,10 @@ html, body {
 }
 
 .franja img.logo {
-  height: 108px;
-  margin-bottom: 18px;
+  height: 170px;
+  width: auto;
+  max-width: 88%;
+  margin-bottom: 16px;
 }
 
 .franja h1 {
