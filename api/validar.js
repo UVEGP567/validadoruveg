@@ -47,17 +47,19 @@ module.exports = (req, res) => {
   }
 
   const folio = normaliza(req.query.folio);
-  const matricula = normaliza(req.query.matricula);
+  const validador = normaliza(req.query.validador);
 
-  // Se exige AMBOS datos (folio + matrícula) para dificultar
-  // la enumeración/scraping de documentos por fuerza bruta.
-  if (!folio || !matricula) {
-    res.status(400).json({ error: "Folio y matrícula son requeridos." });
+  // Se exige AMBOS datos (folio + código validador) para dificultar
+  // la enumeración/scraping de documentos por fuerza bruta. El código
+  // validador es un identificador propio del documento (no la matrícula
+  // del alumno), para no exponer un dato personal como llave de búsqueda.
+  if (!folio || !validador) {
+    res.status(400).json({ error: "Folio y código validador son requeridos." });
     return;
   }
 
   const encontrado = documentos.find(
-    (d) => normaliza(d.folio) === folio && normaliza(d.matricula) === matricula
+    (d) => normaliza(d.folio) === folio && normaliza(d.codigoValidador) === validador
   );
 
   // Headers para que esta respuesta no quede cacheada ni indexada
