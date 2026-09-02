@@ -1,6 +1,8 @@
 // scripts/generar-qr.js
 // Genera un PNG de código QR por cada documento de prueba.
-// Cada QR apunta a: https://TU-DOMINIO/validar.html?folio=...&matricula=...
+// Cada QR apunta a: https://TU-DOMINIO/index.php?folio=...&validador=...
+// (index.php es un rewrite hacia validar.html configurado en vercel.json,
+// para que la URL se vea igual que la del sistema real de la UVEG)
 //
 // Uso:
 //   1) npm install qrcode
@@ -28,8 +30,8 @@ async function generarTodos() {
   for (const doc of documentos) {
     const url =
       dominio.replace(/\/$/, "") +
-      "/validar.html?" +
-      new URLSearchParams({ folio: doc.folio, matricula: doc.matricula }).toString();
+      "/index.php?" +
+      new URLSearchParams({ folio: doc.folio, validador: doc.codigoValidador }).toString();
 
     const archivo = path.join(salida, `${doc.folio}.png`);
     await QRCode.toFile(archivo, url, { width: 400, margin: 2 });

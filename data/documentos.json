@@ -7,7 +7,8 @@
     "fechaExpedicion": "13/08/2025",
     "unidadEmisora": "Coordinación de Educación Continua",
     "programaEstudio": "Publicidad en Redes Sociales",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "770487"
   },
   {
     "matricula": "ec20031122",
@@ -17,7 +18,8 @@
     "fechaExpedicion": "14/08/2025",
     "unidadEmisora": "Coordinación de Educación Continua",
     "programaEstudio": "Marketing Digital para Emprendedores",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "216739"
   },
   {
     "matricula": "lc18004411",
@@ -27,7 +29,8 @@
     "fechaExpedicion": "02/12/2023",
     "unidadEmisora": "Dirección Académica",
     "programaEstudio": "Licenciatura en Ciencias de la Comunicación",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "126225"
   },
   {
     "matricula": "in17009988",
@@ -37,7 +40,8 @@
     "fechaExpedicion": "20/06/2022",
     "unidadEmisora": "Dirección Académica",
     "programaEstudio": "Bachillerato General",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "877572"
   },
   {
     "matricula": "ad21015567",
@@ -47,7 +51,8 @@
     "fechaExpedicion": "05/05/2025",
     "unidadEmisora": "Coordinación de Educación Continua",
     "programaEstudio": "Excel Avanzado para Negocios",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "388389"
   },
   {
     "matricula": "mk19022310",
@@ -57,7 +62,8 @@
     "fechaExpedicion": "18/03/2024",
     "unidadEmisora": "Dirección Académica",
     "programaEstudio": "Licenciatura en Mercadotecnia",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "356787"
   },
   {
     "matricula": "de16007733",
@@ -67,7 +73,8 @@
     "fechaExpedicion": "30/09/2023",
     "unidadEmisora": "Dirección de Posgrados",
     "programaEstudio": "Maestría en Administración de Negocios",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "334053"
   },
   {
     "matricula": "ps20040098",
@@ -77,7 +84,8 @@
     "fechaExpedicion": "22/04/2025",
     "unidadEmisora": "Coordinación de Educación Continua",
     "programaEstudio": "Diseño Gráfico con Canva",
-    "estatus": "Cancelado"
+    "estatus": "Cancelado",
+    "codigoValidador": "246316"
   },
   {
     "matricula": "gs15002214",
@@ -87,7 +95,8 @@
     "fechaExpedicion": "11/11/2022",
     "unidadEmisora": "Dirección Académica",
     "programaEstudio": "Licenciatura en Sistemas Computacionales",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "872246"
   },
   {
     "matricula": "nu22050671",
@@ -97,7 +106,8 @@
     "fechaExpedicion": "01/07/2025",
     "unidadEmisora": "Dirección Académica",
     "programaEstudio": "Bachillerato General",
-    "estatus": "Vigente"
+    "estatus": "Vigente",
+    "codigoValidador": "207473"
   },
   {
     "matricula": "22016299",
@@ -110,6 +120,7 @@
     "cct": "11ESO0001A",
     "periodoEscolar": "05 de Noviembre de 2025",
     "estatus": "Documentación de egreso en trámite",
-    "observaciones": "El alumno concluyó satisfactoriamente el programa de estudios y cumplió con los requisitos para obtener su Certificado de terminación de estudios y Título Profesional Electrónico. Dicha documentación se encuentra actualmente en trámite."
+    "observaciones": "El alumno concluyó satisfactoriamente el programa de estudios y cumplió con los requisitos para obtener su Certificado de terminación de estudios y Título Profesional Electrónico. Dicha documentación se encuentra actualmente en trámite.",
+    "codigoValidador": "845213"
   }
 ]

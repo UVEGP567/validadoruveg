@@ -23,7 +23,7 @@
   <script>
     const params = new URLSearchParams(window.location.search);
     const folio = params.get("folio") || "";
-    const matricula = params.get("matricula") || "";
+    const validador = params.get("validador") || "";
     const tarjeta = document.getElementById("tarjeta");
 
     function escapa(str) {
@@ -48,13 +48,13 @@
     }
 
     async function validar() {
-      if (!folio || !matricula) {
+      if (!folio || !validador) {
         mostrarError("Faltan datos para realizar la consulta.");
         return;
       }
       try {
         const resp = await fetch(
-          "/api/validar?" + new URLSearchParams({ folio, matricula }).toString()
+          "/api/validar?" + new URLSearchParams({ folio, validador }).toString()
         );
         const data = await resp.json();
 

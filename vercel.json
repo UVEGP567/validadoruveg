@@ -1,4 +1,7 @@
 {
+  "rewrites": [
+    { "source": "/index.php", "destination": "/validar.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
