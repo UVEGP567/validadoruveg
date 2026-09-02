@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Resultado de validación | UVEG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="franja">
+    <img class="logo" src="logo-uveg.png" alt="UVEG" />
+    <h1>Validador de documentos</h1>
+    <p>Consulta de autenticidad de documentos expedidos por la Universidad Virtual del Estado de Guanajuato.</p>
+  </div>
+
+  <div class="contenedor">
+    <div class="tarjeta" id="tarjeta">
+      <div class="spinner" id="spinner"></div>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const folio = params.get("folio") || "";
+    const matricula = params.get("matricula") || "";
+    const tarjeta = document.getElementById("tarjeta");
+
+    function escapa(str) {
+      const d = document.createElement("div");
+      d.textContent = str;
+      return d.innerHTML;
+    }
+
+    function mostrarError(msg) {
+      tarjeta.innerHTML = `
+        <div class="mensaje error" style="display:block;">${escapa(msg)}</div>
+        <a class="enlace-volver" href="index.html">&larr; Intentar otra consulta</a>
+      `;
+    }
+
+    function pillClase(estatus) {
+      const e = (estatus || "").toLowerCase();
+      if (e === "vigente") return "vigente";
+      if (e === "cancelado") return "cancelado";
+      if (e.includes("trámite") || e.includes("tramite")) return "tramite";
+      return "desconocido";
+    }
+
+    async function validar() {
+      if (!folio || !matricula) {
+        mostrarError("Faltan datos para realizar la consulta.");
+        return;
+      }
+      try {
+        const resp = await fetch(
+          "/api/validar?" + new URLSearchParams({ folio, matricula }).toString()
+        );
+        const data = await resp.json();
+
+        if (!resp.ok) {
+          mostrarError(data.error || "No se pudo validar el documento.");
+          return;
+        }
+
+        tarjeta.innerHTML = `
+          <div class="resultado">
+            <h2>Información general</h2>
+            <span class="estado-pill ${pillClase(data.estatus)}">${escapa(data.estatus)}</span>
+
+            <div class="fila">
+              <div class="etiqueta">Matrícula</div>
+              <div class="valor">${escapa(data.matricula)}</div>
+            </div>
+            <div class="fila">
+              <div class="etiqueta">Nombre completo</div>
+              <div class="valor">${escapa(data.nombreCompleto)}</div>
+            </div>
+            <div class="fila">
+              <div class="etiqueta">Folio del documento</div>
+              <div class="valor">${escapa(data.folio)}</div>
+            </div>
+            <div class="fila">
+              <div class="etiqueta">Tipo de documento</div>
+              <div class="valor">${escapa(data.tipoDocumento)}</div>
+            </div>
+            <div class="fila">
+              <div class="etiqueta">Fecha de expedición</div>
+              <div class="valor">${escapa(data.fechaExpedicion)}</div>
+            </div>
+            <div class="fila">
+              <div class="etiqueta">Unidad emisora</div>
+              <div class="valor">${escapa(data.unidadEmisora)}</div>
+            </div>
+            <div class="fila">
+              <div class="etiqueta">Programa de estudio</div>
+              <div class="valor">${escapa(data.programaEstudio)}</div>
+            </div>
+            ${data.cct ? `
+            <div class="fila">
+              <div class="etiqueta">CCT</div>
+              <div class="valor">${escapa(data.cct)}</div>
+            </div>` : ""}
+            ${data.periodoEscolar ? `
+            <div class="fila">
+              <div class="etiqueta">Periodo escolar</div>
+              <div class="valor">${escapa(data.periodoEscolar)}</div>
+            </div>` : ""}
+            ${data.observaciones ? `
+            <div class="fila">
+              <div class="etiqueta">Observaciones</div>
+              <div class="valor">${escapa(data.observaciones)}</div>
+            </div>` : ""}
+
+            <div class="pie">UVEG · Universidad Virtual del Estado de Guanajuato</div>
+            <div style="text-align:center;">
+              <a class="enlace-volver" href="index.html">&larr; Realizar otra consulta</a>
+            </div>
+          </div>
+        `;
+      } catch (err) {
+        mostrarError("Ocurrió un error al conectar con el servidor. Intenta de nuevo.");
+      }
+    }
+
+    validar();
+  </script>
+</body>
+</html>

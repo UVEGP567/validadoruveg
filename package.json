@@ -1,0 +1,12 @@
+{
+  "name": "uveg-validador-documentos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototipo de validador de documentos con codigo QR - UVEG",
+  "scripts": {
+    "generar-qr": "node scripts/generar-qr.js"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}

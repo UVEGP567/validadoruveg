@@ -1,0 +1,115 @@
+[
+  {
+    "matricula": "ec19028054",
+    "nombreCompleto": "Luis Javier Zamora Gomez",
+    "folio": "PRSO202504827",
+    "tipoDocumento": "Constancia de Educación Continua",
+    "fechaExpedicion": "13/08/2025",
+    "unidadEmisora": "Coordinación de Educación Continua",
+    "programaEstudio": "Publicidad en Redes Sociales",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "ec20031122",
+    "nombreCompleto": "Ana Sofía Ramírez Torres",
+    "folio": "PRSO202504828",
+    "tipoDocumento": "Constancia de Educación Continua",
+    "fechaExpedicion": "14/08/2025",
+    "unidadEmisora": "Coordinación de Educación Continua",
+    "programaEstudio": "Marketing Digital para Emprendedores",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "lc18004411",
+    "nombreCompleto": "Carlos Eduardo Pérez Martínez",
+    "folio": "TITU202301045",
+    "tipoDocumento": "Título Profesional",
+    "fechaExpedicion": "02/12/2023",
+    "unidadEmisora": "Dirección Académica",
+    "programaEstudio": "Licenciatura en Ciencias de la Comunicación",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "in17009988",
+    "nombreCompleto": "María Fernanda López Hernández",
+    "folio": "CERT202209001",
+    "tipoDocumento": "Certificado de Bachillerato",
+    "fechaExpedicion": "20/06/2022",
+    "unidadEmisora": "Dirección Académica",
+    "programaEstudio": "Bachillerato General",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "ad21015567",
+    "nombreCompleto": "José Antonio García Ruiz",
+    "folio": "PRSO202503219",
+    "tipoDocumento": "Constancia de Educación Continua",
+    "fechaExpedicion": "05/05/2025",
+    "unidadEmisora": "Coordinación de Educación Continua",
+    "programaEstudio": "Excel Avanzado para Negocios",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "mk19022310",
+    "nombreCompleto": "Daniela Guadalupe Morales Castro",
+    "folio": "TITU202401187",
+    "tipoDocumento": "Título Profesional",
+    "fechaExpedicion": "18/03/2024",
+    "unidadEmisora": "Dirección Académica",
+    "programaEstudio": "Licenciatura en Mercadotecnia",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "de16007733",
+    "nombreCompleto": "Roberto Carlos Sánchez Vega",
+    "folio": "MAES202302056",
+    "tipoDocumento": "Grado de Maestría",
+    "fechaExpedicion": "30/09/2023",
+    "unidadEmisora": "Dirección de Posgrados",
+    "programaEstudio": "Maestría en Administración de Negocios",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "ps20040098",
+    "nombreCompleto": "Valeria Ximena Ortiz Domínguez",
+    "folio": "PRSO202502764",
+    "tipoDocumento": "Constancia de Educación Continua",
+    "fechaExpedicion": "22/04/2025",
+    "unidadEmisora": "Coordinación de Educación Continua",
+    "programaEstudio": "Diseño Gráfico con Canva",
+    "estatus": "Cancelado"
+  },
+  {
+    "matricula": "gs15002214",
+    "nombreCompleto": "Fernando Alejandro Cruz Reyes",
+    "folio": "TITU202207732",
+    "tipoDocumento": "Título Profesional",
+    "fechaExpedicion": "11/11/2022",
+    "unidadEmisora": "Dirección Académica",
+    "programaEstudio": "Licenciatura en Sistemas Computacionales",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "nu22050671",
+    "nombreCompleto": "Paulina Alejandra Torres Jiménez",
+    "folio": "CERT202503388",
+    "tipoDocumento": "Certificado de Bachillerato",
+    "fechaExpedicion": "01/07/2025",
+    "unidadEmisora": "Dirección Académica",
+    "programaEstudio": "Bachillerato General",
+    "estatus": "Vigente"
+  },
+  {
+    "matricula": "22016299",
+    "nombreCompleto": "Ivan Martinez Pelaez",
+    "folio": "DCE-OFICEN-607-000673-26",
+    "tipoDocumento": "Constancia de Terminación de Estudios",
+    "fechaExpedicion": "20/02/2026",
+    "unidadEmisora": "Subdirección de Control Escolar",
+    "programaEstudio": "Ingeniería Industrial",
+    "cct": "11ESO0001A",
+    "periodoEscolar": "05 de Noviembre de 2025",
+    "estatus": "Documentación de egreso en trámite",
+    "observaciones": "El alumno concluyó satisfactoriamente el programa de estudios y cumplió con los requisitos para obtener su Certificado de terminación de estudios y Título Profesional Electrónico. Dicha documentación se encuentra actualmente en trámite."
+  }
+]

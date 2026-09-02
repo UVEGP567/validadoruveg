@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Validador de Documentos | UVEG</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="franja">
+    <img class="logo" src="logo-uveg.png" alt="UVEG" />
+    <h1>Validador de documentos</h1>
+    <p>Consulta de autenticidad de documentos expedidos por la Universidad Virtual del Estado de Guanajuato.</p>
+  </div>
+
+  <div class="contenedor">
+    <div class="tarjeta">
+      <form id="formValidar">
+        <div class="campo">
+          <label for="folio">Folio del documento</label>
+          <input id="folio" name="folio" type="text" placeholder="Ej. PRSO202504827" autocomplete="off" required />
+        </div>
+        <div class="campo">
+          <label for="matricula">Matrícula</label>
+          <input id="matricula" name="matricula" type="text" placeholder="Ej. ec19028054" autocomplete="off" required />
+        </div>
+        <button class="boton" type="submit" id="btnBuscar">Consultar documento</button>
+      </form>
+      <div class="mensaje error" id="mensajeError"></div>
+      <p class="nota-legal">
+        Se solicitan ambos datos (folio y matrícula) para proteger la privacidad
+        de las personas egresadas. Esta página no lista documentos ni permite búsquedas abiertas.
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("formValidar");
+    const btn = document.getElementById("btnBuscar");
+    const mensajeError = document.getElementById("mensajeError");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      mensajeError.style.display = "none";
+
+      const folio = document.getElementById("folio").value.trim();
+      const matricula = document.getElementById("matricula").value.trim();
+
+      if (!folio || !matricula) {
+        mensajeError.textContent = "Por favor completa ambos campos.";
+        mensajeError.style.display = "block";
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = "Buscando...";
+
+      const params = new URLSearchParams({ folio, matricula });
+      window.location.href = "validar.html?" + params.toString();
+    });
+  </script>
+</body>
+</html>
