@@ -35,7 +35,6 @@
     function mostrarError(msg) {
       tarjeta.innerHTML = `
         <div class="mensaje error" style="display:block;">${escapa(msg)}</div>
-        <a class="enlace-volver" href="index.html">&larr; Intentar otra consulta</a>
       `;
     }
 
@@ -113,9 +112,6 @@
             </div>` : ""}
 
             <div class="pie">UVEG · Universidad Virtual del Estado de Guanajuato</div>
-            <div style="text-align:center;">
-              <a class="enlace-volver" href="index.html">&larr; Realizar otra consulta</a>
-            </div>
           </div>
         `;
       } catch (err) {
