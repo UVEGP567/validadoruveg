@@ -25,15 +25,8 @@ html, body {
 .franja {
   background: linear-gradient(135deg, var(--azul-uveg) 0%, var(--azul-uveg-oscuro) 100%);
   color: #fff;
-  padding: 32px 24px 56px;
+  padding: 34px 24px 62px;
   text-align: center;
-}
-
-.franja img.logo {
-  height: 128px;
-  width: auto;
-  max-width: 80%;
-  margin-bottom: 16px;
 }
 
 .franja h1 {
@@ -50,6 +43,14 @@ html, body {
   color: rgba(255, 255, 255, 0.85);
   font-size: 0.98rem;
   line-height: 1.5;
+}
+
+.logo-tarjeta {
+  display: block;
+  height: 66px;
+  width: auto;
+  max-width: 70%;
+  margin: 0 auto 18px;
 }
 
 .contenedor {
