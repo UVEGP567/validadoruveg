@@ -1,6 +1,6 @@
 :root {
-  --azul-uveg: #0a2f8f;
-  --azul-uveg-oscuro: #071f63;
+  --azul-uveg: #1554d6;
+  --azul-uveg-oscuro: #0e3fb0;
   --azul-cielo: #2f6fed;
   --tinta: #101418;
   --gris-texto: #4b5563;
@@ -22,25 +22,18 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-.topbar {
-  background: #fff;
-  padding: 20px 24px 18px;
-  text-align: center;
-  border-bottom: 1px solid var(--gris-borde);
-}
-
-.logo-top {
-  display: inline-block;
-  height: 58px;
-  width: auto;
-  max-width: 70%;
-}
-
 .franja {
   background: linear-gradient(135deg, var(--azul-uveg) 0%, var(--azul-uveg-oscuro) 100%);
   color: #fff;
-  padding: 26px 24px 56px;
+  padding: 36px 24px 56px;
   text-align: center;
+}
+
+.franja img.logo {
+  height: 100px;
+  width: auto;
+  max-width: 78%;
+  margin-bottom: 20px;
 }
 
 .franja h1 {
@@ -145,6 +138,7 @@ html, body {
   font-size: 1.2rem;
   margin: 0 0 20px;
   color: var(--azul-uveg-oscuro);
+  text-align: center;
 }
 
 .estado-pill {
