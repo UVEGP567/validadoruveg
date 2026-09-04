@@ -89,7 +89,7 @@ module.exports = (req, res) => {
   // (ej. Constancia de Terminación de Estudios trae CCT y periodo escolar).
   // Solo se agregan si existen en el registro, así los demás documentos
   // no muestran campos vacíos.
-  const OPCIONALES = ["cct", "periodoEscolar", "observaciones"];
+  const OPCIONALES = ["cct", "fechaTerminacionEstudios", "observaciones"];
   for (const campo of OPCIONALES) {
     if (encontrado[campo]) respuesta[campo] = encontrado[campo];
   }

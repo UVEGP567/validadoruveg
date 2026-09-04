@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="topbar">
+    <img class="logo-top" src="logo-uveg.png" alt="UVEG" />
+  </div>
   <div class="franja">
     <h1>Validador de documentos</h1>
     <p>Consulta de autenticidad de documentos expedidos por la Universidad Virtual del Estado de Guanajuato.</p>
   </div>
 
   <div class="contenedor">
-    <img class="logo-tarjeta" src="logo-uveg.png" alt="UVEG" />
     <div class="tarjeta" id="tarjeta">
       <div class="spinner" id="spinner"></div>
     </div>
@@ -100,15 +102,15 @@
               <div class="etiqueta">CCT</div>
               <div class="valor">${escapa(data.cct)}</div>
             </div>` : ""}
-            ${data.periodoEscolar ? `
+            ${data.fechaTerminacionEstudios ? `
             <div class="fila">
-              <div class="etiqueta">Periodo escolar</div>
-              <div class="valor">${escapa(data.periodoEscolar)}</div>
+              <div class="etiqueta">Fecha de terminación de estudios</div>
+              <div class="valor">${escapa(data.fechaTerminacionEstudios)}</div>
             </div>` : ""}
             ${data.observaciones ? `
             <div class="fila">
               <div class="etiqueta">Observaciones</div>
-              <div class="valor">${escapa(data.observaciones)}</div>
+              <div class="valor valor-justificado">${escapa(data.observaciones)}</div>
             </div>` : ""}
 
             <div class="pie">UVEG · Universidad Virtual del Estado de Guanajuato</div>

@@ -22,10 +22,24 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+.topbar {
+  background: #fff;
+  padding: 20px 24px 18px;
+  text-align: center;
+  border-bottom: 1px solid var(--gris-borde);
+}
+
+.logo-top {
+  display: inline-block;
+  height: 58px;
+  width: auto;
+  max-width: 70%;
+}
+
 .franja {
   background: linear-gradient(135deg, var(--azul-uveg) 0%, var(--azul-uveg-oscuro) 100%);
   color: #fff;
-  padding: 34px 24px 62px;
+  padding: 26px 24px 56px;
   text-align: center;
 }
 
@@ -45,13 +59,7 @@ html, body {
   line-height: 1.5;
 }
 
-.logo-tarjeta {
-  display: block;
-  height: 66px;
-  width: auto;
-  max-width: 70%;
-  margin: 0 auto 18px;
-}
+
 
 .contenedor {
   max-width: 480px;
@@ -170,6 +178,11 @@ html, body {
 .fila .valor {
   font-size: 1rem;
   color: var(--tinta);
+}
+
+.fila .valor.valor-justificado {
+  text-align: justify;
+  line-height: 1.5;
 }
 
 .pie {

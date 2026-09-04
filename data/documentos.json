@@ -118,9 +118,9 @@
     "unidadEmisora": "Subdirección de Control Escolar",
     "programaEstudio": "Ingeniería Industrial",
     "cct": "11ESO0001A",
-    "periodoEscolar": "05 de Noviembre de 2025",
     "estatus": "Documentación de egreso en trámite",
     "observaciones": "El alumno concluyó satisfactoriamente el programa de estudios y cumplió con los requisitos para obtener su Certificado de terminación de estudios y Título Profesional Electrónico. Dicha documentación se encuentra actualmente en trámite.",
-    "codigoValidador": "845213"
+    "codigoValidador": "845213",
+    "fechaTerminacionEstudios": "05 de Noviembre de 2025"
   }
 ]
