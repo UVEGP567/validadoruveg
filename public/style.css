@@ -33,7 +33,7 @@ html, body {
   height: 66px;
   width: auto;
   max-width: 60%;
-  margin-bottom: 18px;
+  margin-top: 18px;
 }
 
 .franja h1 {
@@ -185,7 +185,7 @@ html, body {
   border-top: 1px solid var(--gris-borde);
   text-align: center;
   font-size: 0.85rem;
-  color: var(--gris-texto);
+  color: var(--azul-cielo);
 }
 
 .enlace-volver {
