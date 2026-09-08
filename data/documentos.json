@@ -122,5 +122,18 @@
     "observaciones": "El alumno concluyó satisfactoriamente el programa de estudios y cumplió con los requisitos para obtener su Certificado de terminación de estudios y Título Profesional Electrónico. Dicha documentación se encuentra actualmente en trámite.",
     "codigoValidador": "845213",
     "fechaTerminacionEstudios": "05 de Noviembre de 2025"
+  },
+  {
+    "matricula": "25019079",
+    "nombreCompleto": "Francisco González Gutierrez",
+    "folio": "DCE-OFICEN-618-000100-25",
+    "tipoDocumento": "Constancia de Terminación de Estudios",
+    "fechaExpedicion": "27/07/2026",
+    "unidadEmisora": "Subdirección de Control Escolar",
+    "programaEstudio": "Licenciatura en Gestión y Desarrollo Empresarial",
+    "cct": "11MSU0163F",
+    "estatus": "Documentación de egreso en trámite",
+    "codigoValidador": "593184",
+    "fechaTerminacionEstudios": "Mayo de 2021 a Marzo de 2025"
   }
 ]
